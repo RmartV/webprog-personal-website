@@ -1,11 +1,70 @@
 body {
-    background-color: lightblue;
-  }
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+  background-color: #ECEBDE;
+}
+h1 {
+  color: rgb(19, 17, 17);
+  text-align: center;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  padding-top: 20px;
+}
+h3, h4{
+  margin-left: 15px;
+  font-family: "Bebas Neue", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+li, p{
+  margin-left: 15px;
+  font-family: "Squada One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color:#A59D84 ;
+  border-radius: 25px;
+  box-shadow: 5px 5px #645f4f;
+}
+.container table {
+ width: 100%;
+ font-family: "Squada One", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+}
+hr{
+  height:3px;
+  width: 98%;
+  border-width: 0px;
+  color:#9ABF80;
+  border-radius: 25px;
+  background-color: #9ABF80;
+}
+.container td{
+  text-align: center;
+  font-family: "Squada One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img{
+  float: center;
+  border: 2px solid #ddd;
+  background-color: #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  padding-bottom: 60px;
+  width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.picture-gallery {
+  display: flex;
+  justify-content: center; 
+  padding-bottom: 20px;
+}

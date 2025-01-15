@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#00539F, #001F3D, #001E39);
+  background-image: linear-gradient(#00539F, #001E39);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column; 
@@ -32,18 +32,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-ui{
-  font-family: Arial, Helvetica, sans-serif;
-  list-style-type: none;
-  line-height: 1.0;
-  margin: 0;
-  padding: 0;
-}
-
-h1{
-  font-weight: bold;
-  line-height: 2.0;
-}
 
 .nav a:hover {
   background-color: #ddd;
@@ -61,32 +49,29 @@ h1{
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   background-color: #102C46;
   box-shadow: 5px 10px #001424;
   width: 1000px;
-  height: 300px;
   max-width: 90%; 
 }
 
-
-
-.flex-container ul, li{
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  margin: 20px;
+.flex-container > div {
+  text-align: center;
 }
 
-.flex-container h1{
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  margin: 20px;
+.profpic {
+  width: 1200px; 
+  max-width: 100%; 
+  height: auto;
+  box-shadow: 9px 0px 8px 0px rgba(0, 0, 0, 0.43); 
 }
 
 .image-container {
-  width: 200px; 
+  width: 200px;
   height: 200px; 
   overflow: hidden; 
-  position: relative; 
+  position: relative;
 }
 
 .image-container img {
@@ -94,7 +79,7 @@ h1{
   height: auto; 
   position: absolute;
   align-items: end;
-  top: 55px; 
+  top: 55px;
   left: 60px;
 }
 
@@ -106,51 +91,10 @@ h1{
 }
 
 .item3 p {
-  font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   color: aliceblue;
   font-size: 23px;
 }
-.container {
-  display: grid;
-  width: 1025px;
-  grid-template-columns: auto auto auto;
-  gap:13px;
-  margin: 0 auto; 
-}
-.container > div {
-  background-color: #102C46;
-  box-shadow: 5px 10px #001424;
-  font-size: 30px;
-  padding-bottom: 20px;
- 
-}
-.container img {
-  width: 327px;
-  height: auto;
-  box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
-}
-
-.film-container {
-  display: grid;
-  width: 1000px;
-  grid-template-columns: auto auto auto auto;
-  gap:13px;
-  margin: 0 auto; 
-  padding-bottom: 90px;
-}
-.film-container > div {
-  background-color: #102C46;
-  box-shadow: 5px 10px #001424;
-  font-size: 30px;
- 
-}
-.film-container img {
-  width: 240px;
-  height: auto;
-  box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
-}
-
 footer{
   position: fixed;
   left: 0;
@@ -158,41 +102,8 @@ footer{
   text-align: center;
 }
 
-.top-games {
-  width: 1000px;
-  margin: 20px auto;
-  margin-top: 90px;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 
-.gameTitle{
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-font-weight: bold;
-color: white;
-margin-top: 20px;
-}
-
-.moveiTitle{
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-font-weight: bold;
-color: white;
-margin-top: 20px;
-font-size: 16px;
-}
-
-.caption{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-color: white;
-margin: 0 20px;
-
-}
 @media (max-width: 1600px) {
   .nav {
       width: 90%; 
@@ -223,10 +134,5 @@ margin: 0 20px;
 
   .item3 p {
       font-size: 14px;
-  }
-}
-@media (max-width: 1100px) {
-  .container, .top-games {
-      width: 90%;
   }
 }

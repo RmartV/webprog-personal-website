@@ -11,33 +11,34 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div id="app">
-        <div class="nav">
-            <a href="index.html">About me</a>
-            <a href="index_edu.html">Education</a>
-            <a href="index_ITex.html">IT Experience</a>
-            <a href="index_hob.html">Hobbies & Interest</a>
-            <a href="index_goal.html">Goals In Life</a>
-            <a class="current" href="index_gall.html" style="color: black;">Picture Gallery</a>
-        </div>
-        
-        <carousel-component></carousel-component>
+    <div class="slider">
+        <input type="radio" name="toggle" id="btn-1" checked>
+        <input type="radio" name="toggle" id="btn-2">
+        <input type="radio" name="toggle" id="btn-3">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+      </div>
 
-        <footer>
-            <div class="image-container">
-                <img src="images/rm.gif">
-            </div>
-        </footer>
-    </div>
-
-    <!-- Mount Vue app -->
-    <script type="module">
-        import { createApp } from 'vue'
-        import CarouselComponent from './components/Carousel.vue'
-
-        const app = createApp({})
-        app.component('carousel-component', CarouselComponent)
-        app.mount('#app')
-    </script>
+      
+        <ul class="slides">
+          <li class="slide">
+            <p class="slide-image">
+              <img src="images/iteach.JPG" alt="stuff" width="1500" height="473">
+            </p>
+          </li>
+          <li class="slide">
+            <p class="slide-image">
+              <img src="images/apcdun.jpg" alt="stuff" width="1500" height="473">
+            </p>
+          </li>
+          <li class="slide">
+            <p class="slide-image">
+              <img src="images/trackit.jpg" alt="stuff" width="800" height="473">
+            </p>
+          </li>
+        </ul>
+      </div>
 </body>
 </html>
